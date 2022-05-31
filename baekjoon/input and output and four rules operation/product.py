@@ -1,1 +1,10 @@
-#문제 해결 후 수정
+x = input()
+x = int(x)
+y = input()
+a = int(y[0])
+b = int(y[1])
+c = int(y[2])
+print(x * a)
+print(x * b)
+print(x * c)
+print((x*a)+(x*b*10)+(x*c*100))
