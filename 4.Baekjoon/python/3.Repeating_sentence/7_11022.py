@@ -1,8 +1,8 @@
-# 빠른 A + B
+# A + B - 8
 import sys
 
 n = int(sys.stdin.readline())
 
-for _ in range(n):
+for i in range(n):
     a, b = tuple(map(int, sys.stdin.readline().split(" ")))
-    print(a+b)
+    print(f"Case #{i+1}: {a} + {b} = {a+b}")
