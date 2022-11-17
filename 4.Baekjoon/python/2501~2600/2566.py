@@ -2,11 +2,10 @@
 
 A = [list(map(int, input().split()))for _ in range(9)]
 result = 0
-c = 0
 
 for i in range(9):
     a = max(A[i])
-    if a > result:
+    if a >= result:
         result = a
         b = i
 for i in range(9):

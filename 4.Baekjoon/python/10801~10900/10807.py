@@ -1,3 +1,4 @@
+# 개수 세기
 n = input()
 L = list(map(int, input().split()))
 v = int(input())
