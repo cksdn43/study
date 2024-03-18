@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int N = 0,M = 0; // 변수
+	int a = 0, z = 0, ball = 0;
+	int* list;
+
+	scanf("%d %d", &N, &M); // N M 입력
+	list = (int*)calloc(N, sizeof(int));
+
+	for (int m = M; m > 0; m--) { // 바구니에 공저장
+		scanf("%d %d %d", &a, &z, &ball);
+		for (; a <= z; a++) {
+			list[a-1] = ball;
+		}
+	}
+	for (int n = 0; n < N; n++) //결과출력
+		printf("%d ", list[n]);
+
+	free(list);
+	return 0;
+}
