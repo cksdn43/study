@@ -11,8 +11,8 @@ int main(void){
 }
 
 bool IsFullQ(){
-    if((rear+1)/size == front) return 1;
-    return 0;
+    if((rear+1)/size == front) return 1; // 원형큐에서 한칸 비우기
+    return 0; // 2배 사이즈로 realloc하면 큐를 링크드리스트로 구현
 }
 
 bool IsEmptyQ(){
@@ -27,7 +27,7 @@ void addQ(int front, int rear,element item){
 }
 
 
-void deleteQ(){
+element deleteQ(){
     if(IsEmptyQ()) return;
     front = (++front) % size;
     return queue[front];

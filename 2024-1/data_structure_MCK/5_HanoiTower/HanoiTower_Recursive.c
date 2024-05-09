@@ -10,7 +10,7 @@ void hanoiTower(int n, char fromPeg, char auxPeg, char toPeg){// 시, 보, 목
         return;
     }
     hanoiTower(n-1, fromPeg, toPeg, auxPeg); // 시, 목, 보
-    moveDisk(fromPeg, toPeg, n); // 시목
+    moveDisk(fromPeg, toPeg, n); // 시, 목
     hanoiTower(n-1, auxPeg, fromPeg, toPeg); // 보, 시, 목
 } 
 
